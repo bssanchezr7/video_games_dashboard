@@ -9,6 +9,7 @@ df.rename(columns={'na_sales':'north america',
           inplace=True)
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1(children='Video Games', style={'textAlign':'center'}, className='title'),
@@ -88,4 +89,4 @@ def update_pie(value):
     return fig
     
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
