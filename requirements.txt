@@ -16,3 +16,4 @@ pytz==2023.2
 six==1.16.0
 tenacity==8.2.2
 Werkzeug==2.2.3
+gunicorn
