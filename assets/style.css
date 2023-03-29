@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-row: auto;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.title {
+    grid-column: 1 / 10;
+    grid-row: 1 /  2;
+}
+
+.options {
+    grid-column: 2 / 10;
+    grid-row: 2 /  3;
+}
+.bar {
+    grid-column: 1 / 6;
+    grid-row: 4 / auto;
+}
+
+.pie {
+    grid-column: 6 / 10;
+    grid-row: 4 / auto;
+}
